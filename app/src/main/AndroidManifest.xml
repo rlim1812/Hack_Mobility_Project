@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.smartcar.sdk.SmartcarCodeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="sc4a1b01e5-0497-417c-a30e-6df6ba33ba46"
+                    android:host="myapp.com"
+                    android:path="/callback" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
